@@ -1,1 +1,0 @@
-# Minecraft-Werewolf-Datapack
