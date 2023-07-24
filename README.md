@@ -1,7 +1,5 @@
 # Minecraft-Werewolf-Datapack
 
-コマンド一覧
-
 ・インストール
 
 /function werewolf:install
