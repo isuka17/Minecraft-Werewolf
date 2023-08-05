@@ -1,0 +1,22 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:crossbow",
+      "minecraft:slime_ball",
+      "minecraft:potion",
+      "minecraft:totem_of_undying",
+      "minecraft:blaze_rod",
+      "minecraft:shield",
+      "minecraft:iron_helmet",
+      "minecraft:knowledge_book",
+      "minecraft:splash_potion",
+      "minecraft:netherite_axe",
+      "minecraft:goat_horn",
+      "minecraft:ender_pearl",
+      "minecraft:experience_bottle",
+      "minecraft:snowball",
+      "minecraft:netherite_chestplate",
+      "minecraft:warped_fungus_on_a_stick",
+      "minecraft:golden_boots"
+    ]
+  }

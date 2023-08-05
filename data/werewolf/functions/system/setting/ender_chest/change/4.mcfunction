@@ -1,0 +1,19 @@
+item replace entity @s enderchest.0 with white_stained_glass_pane{display:{Name:'{"text":"1人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.1 with white_stained_glass_pane{display:{Name:'{"text":"2人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.2 with white_stained_glass_pane{display:{Name:'{"text":"3人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.3 with white_stained_glass_pane{display:{Name:'{"text":"4人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.4 with white_stained_glass_pane{display:{Name:'{"text":"5人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.5 with white_stained_glass_pane{display:{Name:'{"text":"6人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.6 with white_stained_glass_pane{display:{Name:'{"text":"7人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.7 with white_stained_glass_pane{display:{Name:'{"text":"8人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.8 with white_stained_glass_pane{display:{Name:'{"text":"9人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.9 with white_stained_glass_pane{display:{Name:'{"text":"10人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.10 with white_stained_glass_pane{display:{Name:'{"text":"11人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.11 with white_stained_glass_pane{display:{Name:'{"text":"12人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.12 with white_stained_glass_pane{display:{Name:'{"text":"13人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.13 with white_stained_glass_pane{display:{Name:'{"text":"14人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.14 with white_stained_glass_pane{display:{Name:'{"text":"15人以上参加で出現","italic":false}'},pagechange:1}
+item replace entity @s enderchest.24 with barrier{display:{Name:'{"text":"前のページへ移動する","italic":false,"color":"red"}'},pagechange:1}
+item replace entity @s enderchest.25 with nether_star{display:{Name:'{"text":"全アイテムを取得","italic":false,"color":"blue"}'},pagechange:1}
+item replace entity @s enderchest.26 with structure_void{display:{Name:'{"text":"アイテム設定を保存","italic":false,"color":"yellow"}'},pagechange:1}
+scoreboard players set @s page 4
