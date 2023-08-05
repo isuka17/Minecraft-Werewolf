@@ -11,9 +11,9 @@ execute if score ランダムスタート setting matches 1 run item replace ent
 team add gold
 team modify gold color gold
 
-scoreboard players reset ランダムスタート:オン setting_view
+scoreboard players reset ランダムスタート:オン setting_preview
 
-execute if score ランダムスタート setting matches 1 run scoreboard players set ランダムスタート:オン setting_view -28
+execute if score ランダムスタート setting matches 1 run scoreboard players set ランダムスタート:オン setting_preview -28
 
 
 team join gold ランダムスタート:オン

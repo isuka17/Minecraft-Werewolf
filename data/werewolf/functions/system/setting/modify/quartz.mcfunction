@@ -11,9 +11,9 @@ execute if score クォーツ強化 setting matches 1.. run item replace entity 
 team add aqua
 team modify aqua color aqua
 
-scoreboard players reset クォーツ強化:オン setting_view
+scoreboard players reset クォーツ強化:オン setting_preview
 
-execute if score クォーツ強化 setting matches 1 run scoreboard players set クォーツ強化:オン setting_view -27
+execute if score クォーツ強化 setting matches 1 run scoreboard players set クォーツ強化:オン setting_preview -27
 
 
 team join aqua クォーツ強化:オン

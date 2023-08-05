@@ -11,9 +11,9 @@ execute if score 死体を生成 setting matches 1.. run item replace entity @s 
 team add red
 team modify red color red
 
-scoreboard players reset 死体を生成:オン setting_view
+scoreboard players reset 死体を生成:オン setting_preview
 
-execute if score 死体を生成 setting matches 1 run scoreboard players set 死体を生成:オン setting_view -26
+execute if score 死体を生成 setting matches 1 run scoreboard players set 死体を生成:オン setting_preview -26
 
 
 team join red 死体を生成:オン

@@ -15,13 +15,13 @@ execute if score 無敵時間 setting matches 3 run item replace entity @s ender
 team add yellow
 team modify yellow color yellow
 
-scoreboard players reset 無敵時間:10秒 setting_view
-scoreboard players reset 無敵時間:20秒 setting_view
-scoreboard players reset 無敵時間:30秒 setting_view
+scoreboard players reset 無敵時間:10秒 setting_preview
+scoreboard players reset 無敵時間:20秒 setting_preview
+scoreboard players reset 無敵時間:30秒 setting_preview
 
-execute if score 無敵時間 setting matches 1 run scoreboard players set 無敵時間:10秒 setting_view -25
-execute if score 無敵時間 setting matches 2 run scoreboard players set 無敵時間:20秒 setting_view -25
-execute if score 無敵時間 setting matches 3 run scoreboard players set 無敵時間:30秒 setting_view -25
+execute if score 無敵時間 setting matches 1 run scoreboard players set 無敵時間:10秒 setting_preview -25
+execute if score 無敵時間 setting matches 2 run scoreboard players set 無敵時間:20秒 setting_preview -25
+execute if score 無敵時間 setting matches 3 run scoreboard players set 無敵時間:30秒 setting_preview -25
 
 team join yellow 無敵時間:10秒
 team join yellow 無敵時間:20秒
