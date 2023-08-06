@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "werewolf:system/itemss/interaction"
+    "function": "werewolf:system/items/interaction"
   }
 }
