@@ -1,29 +1,28 @@
 # スコアボードを作成
-scoreboard objectives add setting dummy {"text":"ゲーム設定","color":"red","bold":true}
-scoreboard objectives add playernumber dummy {"text":"プレイヤー番号","color":"red","bold":true}
-scoreboard objectives add item dummy {"text":"アイテム配布","color":"red","bold":true}
-scoreboard objectives add deadbody deathCount {"text":"死体生成用の死亡チェック","color":"red","bold":true}
-scoreboard objectives add co trigger {"text":"役職CO","color":"red","bold":true}
-scoreboard objectives add item_select trigger {"text":"アイテム選択","color":"red","bold":true}
-scoreboard objectives add deadsetting deathCount {"text":"死亡設定","color":"red","bold":true}
-scoreboard objectives add join trigger {"text":"参加設定","color":"red","bold":true}
-scoreboard objectives add actionbar trigger {"text":"役職表示","color":"red","bold":true}
-scoreboard objectives add quartz_craft crafted:quartz_block {"text":"クォーツクラフト","color":"red","bold":true}
-scoreboard objectives add blackhole dummy {"text":"ブラックホール1","color":"red","bold":true}
-scoreboard objectives add luminous_bottle used:experience_bottle {"text":"発光の瓶","color":"red","bold":true}
-scoreboard objectives add blackout used:goat_horn {"text":"ブラックアウト","color":"red","bold":true}
-scoreboard objectives add knight_guard minecraft.custom:minecraft.damage_resisted {"text":"騎士の護衛","color":"red","bold":true}
-scoreboard objectives add mine used:iron_helmet {"text":"地雷","color":"red","bold":true}
-scoreboard objectives add balloon dummy {"text":"風船","color":"red","bold":true}
-scoreboard objectives add invincible_armor used:netherite_chestplate {"text":"無敵の鎧","color":"aqua","bold":true}
-scoreboard objectives add positionchange_book minecraft.used:minecraft.knowledge_book {"text":"入れ替わりの書1","color":"red","bold":true}
-scoreboard objectives add shuffle dummy {"text":"入れ替わりの書2","color":"red","bold":true}
-scoreboard objectives add ability_usecount dummy {"text":"能力使用権","color":"red","bold":true}
-scoreboard objectives add page dummy {"text":"ページ数","color":"red","bold":true}
-scoreboard objectives add skyhighdive used:golden_boots {"text":"スカイハイダイブ","color":"red","bold":true}
-scoreboard objectives add random_start dummy {"text":"ランダムスタート","color":"red","bold":true}
-scoreboard objectives add killlog_killcount playerKillCount {"text":"キルログ1","color":"red","bold":true}
-scoreboard objectives add killlog_deathcount deathCount {"text":"キルログ2","color":"red","bold":true}
+scoreboard objectives add setting dummy {"text":"ゲーム設定","color":"red"}
+scoreboard objectives add playernumber dummy {"text":"プレイヤー番号","color":"red"}
+scoreboard objectives add item dummy {"text":"アイテム配布","color":"red"}
+scoreboard objectives add co trigger {"text":"役職CO","color":"red"}
+scoreboard objectives add item_select trigger {"text":"アイテム選択","color":"red"}
+scoreboard objectives add death_process deathCount {"text":"死亡時の処理","color":"red"}
+scoreboard objectives add join trigger {"text":"参加設定","color":"red"}
+scoreboard objectives add actionbar trigger {"text":"役職表示","color":"red"}
+scoreboard objectives add quartz_craft crafted:quartz_block {"text":"クォーツクラフト","color":"red"}
+scoreboard objectives add blackhole dummy {"text":"ブラックホール1","color":"red"}
+scoreboard objectives add luminous_bottle used:experience_bottle {"text":"発光の瓶","color":"red"}
+scoreboard objectives add blackout used:goat_horn {"text":"ブラックアウト","color":"red"}
+scoreboard objectives add knight_guard minecraft.custom:minecraft.damage_resisted {"text":"騎士の護衛","color":"red"}
+scoreboard objectives add mine used:iron_helmet {"text":"地雷","color":"red"}
+scoreboard objectives add balloon dummy {"text":"風船","color":"red"}
+scoreboard objectives add invincible_armor used:netherite_chestplate {"text":"無敵の鎧","color":"aqua"}
+scoreboard objectives add positionchange_book minecraft.used:minecraft.knowledge_book {"text":"入れ替わりの書1","color":"red"}
+scoreboard objectives add shuffle dummy {"text":"入れ替わりの書2","color":"red"}
+scoreboard objectives add ability_usecount dummy {"text":"能力使用権","color":"red"}
+scoreboard objectives add page dummy {"text":"ページ数","color":"red"}
+scoreboard objectives add skyhighdive used:golden_boots {"text":"スカイハイダイブ","color":"red"}
+scoreboard objectives add random_start dummy {"text":"ランダムスタート","color":"red"}
+scoreboard objectives add killlog_killcount playerKillCount {"text":"キルログ1","color":"red"}
+scoreboard objectives add killlog_deathcount deathCount {"text":"キルログ2","color":"red"}
 
 # 初期設定
 execute unless score wolf setting matches 0.. run scoreboard players set wolf setting 0
@@ -50,10 +49,10 @@ execute unless score ランダムスタート setting matches 0.. run scoreboard
 scoreboard players set werewolf setting 0
 
 # チーム作成
-team add wolf {"text":"人狼","color":"red","bold":true}
-team add fox {"text":"妖狐","color":"dark_purple","bold":true}
-team add sharer {"text":"共有者","color":"green","bold":true}
-team add ghost {"text":"霊界","color":"blue","bold":true}
+team add wolf {"text":"人狼チャット","color":"red"}
+team add fox {"text":"妖狐チャット","color":"dark_purple"}
+team add sharer {"text":"共有者チャット","color":"green"}
+team add ghost {"text":"霊界チャット","color":"blue"}
 team add thief {"text":"怪盗","color":"#ff5800"}
 team add madman {"text":"狂人","color":"light_purple"}
 team add alice {"text":"アリス","color":"yellow"}

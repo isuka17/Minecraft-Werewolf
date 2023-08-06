@@ -1,11 +1,11 @@
 #呪われし者の覚醒
 summon armor_stand ~ ~ ~ {Tags:["dammed_revival_point"],Invisible:1,Marker:1}
-tellraw @a[team=ghost] [{"text":"[覚醒] ","color":"red","bold":true},{"selector":"@s","bold":false}]
+tellraw @a[team=ghost] [{"text":"[Werewolf] ","color":"red"},{"selector":"@s"},{"text":" → 覚醒"}]
 tellraw @s [{"text":"[Werewolf] ","color":"red"},{"text":"あなたは呪われし者でした。"}]
 execute at @s run tellraw @s [{"text":"[Werewolf] ","color":"red"},{"text":"仲間の人狼："},{"selector":"@a[tag=wolf,distance=0.1..]"}]
 title @s times 10 70 20
 title @s title {"text":"人狼に殺され、覚醒した","color":"red","bold":true}
-scoreboard players set @s deadsetting 0
+scoreboard players set @s death_process 0
 scoreboard players set @s actionbar 1
 team join wolf @s
 tag @s add normal_wolf

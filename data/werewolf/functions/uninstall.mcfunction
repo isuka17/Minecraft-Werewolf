@@ -9,7 +9,7 @@ scoreboard objectives remove item
 scoreboard objectives remove deadbody
 scoreboard objectives remove co
 scoreboard objectives remove item_select
-scoreboard objectives remove deadsetting
+scoreboard objectives remove death_process
 scoreboard objectives remove join
 scoreboard objectives remove actionbar
 scoreboard objectives remove quartz_craft
