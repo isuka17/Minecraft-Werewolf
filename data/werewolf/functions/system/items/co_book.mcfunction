@@ -3,7 +3,7 @@ scoreboard players enable @a[tag=join] co
 execute if entity @a[scores={co=1..}] as @a[tag=join] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1.8
 
 execute if entity @a[scores={co=1}] run tellraw @a[tag=join] [{"selector":"@a[scores={co=1}]","color":"blue"},{"text":" → 村人CO"}]
-execute if entity @a[scores={co=2}] run tellraw @a[tag=join] [{"selector":"@a[scores={co=2}]","color":"yellow"},{"text":" → 占い師CO"}]
+execute if entity @a[scores={co=2}] run tellraw @a[tag=join] [{"selector":"@a[scores={co=2}]","color":"yellow"},{"text":" → 預言者CO"}]
 execute if entity @a[scores={co=3}] run tellraw @a[tag=join] [{"selector":"@a[scores={co=3}]","color":"dark_aqua"},{"text":" → 霊媒師CO"}]
 execute if entity @a[scores={co=4}] run tellraw @a[tag=join] [{"selector":"@a[scores={co=4}]","color":"green"},{"text":" → 共有者CO"}]
 execute if entity @a[scores={co=5}] run tellraw @a[tag=join] [{"selector":"@a[scores={co=5}]","color":"gold"},{"text":" → 騎士CO"}]

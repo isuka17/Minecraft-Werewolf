@@ -21,7 +21,7 @@ execute if entity @a[tag=wolf_possession,tag=!wolf,tag=penetrate,team=!ghost] ru
 execute if entity @a[tag=!wolf,tag=!wolf_possession,tag=penetrate,team=!ghost] run tellraw @a[scores={penetrate=1..},tag=seer] [{"text":"[Werewolf] ","color":"red"},{"selector":"@a[tag=penetrate]","color":"#0080ff"},{"text":"は人狼ではありません。","color":"#0080ff"}]
 execute if entity @a[tag=penetrate,team=ghost] run tellraw @a[scores={penetrate=1..},tag=seer] [{"text":"[Werewolf] ","color":"red"},{"selector":"@a[tag=penetrate]","color":"gray"},{"text":"は既に死亡しています。","color":"gray"}]
 
-# 怪盗に占い師を盗まれていた場合の占い結果
+# 怪盗に預言者を盗まれていた場合の占い結果
 tellraw @a[scores={penetrate=1..},tag=!seer] [{"text":"[Werewolf] ","color":"red"},{"selector":"@a[tag=penetrate]","color":"#0080ff"},{"text":"は人狼ではありません。","color":"#0080ff"}]
 
 # 妖狐がpenetrateタグを所持していた場合、呪殺される

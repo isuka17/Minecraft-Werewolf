@@ -56,7 +56,7 @@ team add ghost {"text":"霊界チャット","color":"blue"}
 team add thief {"text":"怪盗","color":"#ff5800"}
 team add madman {"text":"狂人","color":"light_purple"}
 team add alice {"text":"アリス","color":"yellow"}
-team add seer {"text":"占い師","color":"yellow"}
+team add seer {"text":"預言者","color":"yellow"}
 team add medium {"text":"霊媒師","color":"dark_aqua"}
 team add knight {"text":"騎士","color":"gold"}
 team add detective {"text":"探偵","color":"#933a00"}

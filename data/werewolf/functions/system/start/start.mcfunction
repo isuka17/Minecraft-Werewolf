@@ -1,7 +1,7 @@
 # 配役を表示
 tellraw @a [{"text":"[Werewolf] ","color":"red"},{"text":"ゲームが開始されました。","color":"white"}]
 tellraw @a [{"text":"[Werewolf] ","color":"red"},{"text":"今回の配役は以下の通りです。","color":"white"}]
-tellraw @a [{"text":"--------------------------------","color":"aqua"}]
+tellraw @a [{"text":"--------------------","color":"aqua"}]
 
 execute store result score join_request setting if entity @a[tag=join_request]
 execute if score join_request setting matches ..14 run tellraw @a [{"text":" 参加者：","color":"aqua"},{"score":{"name":"join_request","objective":"setting"},"color":"aqua"},{"text":"人","color":"aqua"}]
@@ -28,7 +28,7 @@ execute if score wolf_possession setting matches 1 run tellraw @a [{"text":" 狼
 execute if score wolf_possession setting matches 2 run tellraw @a [{"text":" 狼憑き：1人(50%)","color":"aqua"}]
 execute if score wolf_possession setting matches 3 run tellraw @a [{"text":" 狼憑き：1人(100%)","color":"aqua"}]
 
-tellraw @a [{"text":"--------------------------------","color":"aqua"}]
+tellraw @a [{"text":"--------------------","color":"aqua"}]
 
 # ゲームルールを変更
 gamerule sendCommandFeedback false
