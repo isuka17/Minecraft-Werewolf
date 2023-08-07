@@ -62,7 +62,7 @@ execute as @s[scores={page=3}] unless entity @s[nbt={EnderItems:[{Slot:24b,tag:{
 
 
 execute as @s[scores={page=3}] unless entity @s[nbt={EnderItems:[{Slot:8b,id:"minecraft:spectral_arrow",tag:{pagechange:1}}]}] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
-execute as @s[scores={page=3}] unless entity @s[nbt={EnderItems:[{Slot:8b,id:"minecraft:spectral_arrow",tag:{pagechange:1}}]}] run function werewolf:system/setting/ender_chest/change/5
+execute as @s[scores={page=3}] unless entity @s[nbt={EnderItems:[{Slot:8b,id:"minecraft:spectral_arrow",tag:{pagechange:1}}]}] run function werewolf:system/setting/ender_chest/change/page5
 
 execute as @s[scores={page=3}] unless entity @s[nbt={EnderItems:[{Slot:26b,id:"minecraft:barrier",tag:{pagechange:1}}]}] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
-execute as @s[scores={page=3}] unless entity @s[nbt={EnderItems:[{Slot:26b,id:"minecraft:barrier",tag:{pagechange:1}}]}] run function werewolf:system/setting/ender_chest/change/0
+execute as @s[scores={page=3}] unless entity @s[nbt={EnderItems:[{Slot:26b,id:"minecraft:barrier",tag:{pagechange:1}}]}] run function werewolf:system/setting/ender_chest/change/page0

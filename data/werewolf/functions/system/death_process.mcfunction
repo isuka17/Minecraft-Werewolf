@@ -1,6 +1,6 @@
 # 騎士の護衛解除/道連れ
 execute if entity @a[scores={death_process=1..},tag=knight] run tag @a remove guard
-execute if entity @a[scores={death_process=1..},tag=fox] run kill @a[tag=immoralist]
+execute if entity @a[scores={death_process=1..},tag=fox] run kill @a[tag=immoralist,team=!ghost]
 
 #　キルログ
 execute if score werewolf setting matches 1.. if entity @a[scores={killlog_killcount=1..}] run tellraw @a[team=ghost] [{"text":"[Werewolf] ","color":"red"},{"selector":"@a[scores={killlog_killcount=1..}]"},{"text":" → "},{"selector":"@a[scores={killlog_deathcount=1..}]"},{"text":" 死亡"}]

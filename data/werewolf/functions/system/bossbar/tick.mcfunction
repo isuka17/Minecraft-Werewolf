@@ -1,1 +1,1 @@
-function werewolf:system/bossbar/tick
+function werewolf:system/bossbar/camouflage/tick

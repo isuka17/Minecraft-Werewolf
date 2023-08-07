@@ -16,3 +16,4 @@ function werewolf:system/items/stanball
 function werewolf:system/items/skyhighdive
 function werewolf:system/items/invincible_armor
 function werewolf:system/items/instantdeath_trap
+function werewolf:system/items/bombing_trident

@@ -1,8 +1,7 @@
 # 常に実行
-function werewolf:system/death_setting
+function werewolf:system/death_process
 execute if score werewolf setting matches 1 run function werewolf:system/items/tick
 execute if score werewolf setting matches 1 run function werewolf:system/bossbar/tick
-execute if score werewolf setting matches 0 run function werewolf:system/deop_tick
 execute if score werewolf setting matches 0 run function werewolf:system/join_setting
 execute if score werewolf setting matches 1 run function werewolf:system/remove_tag
 execute if score werewolf setting matches 0 run function werewolf:system/setting/ender_chest/page_change

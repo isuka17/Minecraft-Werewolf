@@ -1,40 +1,42 @@
-item replace entity @s enderchest.0 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.1 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.2 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.3 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.4 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.5 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.6 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.7 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.8 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.9 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.11 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.13 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.15 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.17 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.19 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.20 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.21 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.22 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.23 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.24 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.25 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
-item replace entity @s enderchest.26 with orange_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.1 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.2 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.3 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.4 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.5 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.6 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.7 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.8 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.9 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.10 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.11 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.15 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.16 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.17 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.18 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.19 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.20 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.21 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.22 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.23 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.24 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.25 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
+item replace entity @s enderchest.26 with black_stained_glass_pane{display:{Name:'{"text":""}'},pagechange:1}
 
-execute as @s[scores={page=2}] unless entity @s[nbt={EnderItems:[{Slot:10b,id:"minecraft:compass",Count:1b,tag:{pagechange:1}}]}] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
-execute as @s[scores={page=2}] unless entity @s[nbt={EnderItems:[{Slot:10b,id:"minecraft:compass",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/change/random_start
+execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:0b,id:"minecraft:barrier",Count:1b,tag:{pagechange:1}}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
+execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:0b,id:"minecraft:barrier",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/ender_chest/change/page1
 
-execute as @s[scores={page=2}] unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:armor_stand",Count:1b,tag:{pagechange:1}}]}] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
-execute as @s[scores={page=2}] unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:armor_stand",Count:1b,tag:{pagechange:1}}]}] run give @s armor_stand{EntityTag:{Tags:["random_start"]},display:{Name:'{"text":"ランダムスタート地点","italic":false,"color":"gold"}'}}
-execute as @s[scores={page=2}] unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:armor_stand",Count:1b,tag:{pagechange:1}}]}] run item replace entity @s enderchest.12 with armor_stand{display:{Name:'{"text":"ランダムスタート地点登録用防具立てを取得","color":"yellow","italic":false}'},pagechange:1}
+execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:gold_ingot",Count:1b,tag:{pagechange:1}}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
+execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:gold_ingot",Count:1b,tag:{pagechange:1}}]}] run scoreboard players add #invincible_time setting 10
+execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:gold_ingot",Count:1b,tag:{pagechange:1}}]}] run loot replace entity @s enderchest.14 loot werewolf:invincible_time/minus_10
+execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:gold_ingot",Count:1b,tag:{pagechange:1}}]}] run loot replace entity @s enderchest.12 loot werewolf:invincible_time/plus_10
 
-execute as @s[scores={page=2}] unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:redstone",Count:1b,tag:{pagechange:1}}]}] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
-execute as @s[scores={page=2}] unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:redstone",Count:1b,tag:{pagechange:1}}]}] run kill @e[tag=random_start]
-execute as @s[scores={page=2}] unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:redstone",Count:1b,tag:{pagechange:1}}]}] run tellraw @s {"text":"ランダムスタート地点をリセットしました。","color":"red"}
-execute as @s[scores={page=2}] unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:redstone",Count:1b,tag:{pagechange:1}}]}] run item replace entity @s enderchest.14 with redstone{display:{Name:'{"text":"ランダムスタート地点をリセット","color":"red","italic":false}'},pagechange:1}
+execute as @s[scores={page=2}] at @s if score invincible_time setting matches 0 unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:redstone_block",Count:1b,tag:{pagechange:1}}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
+execute as @s[scores={page=2}] at @s if score invincible_time setting matches 0 unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:redstone_block",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/modify/invincible_time
 
-execute as @s[scores={page=2}] unless entity @s[nbt={EnderItems:[{Slot:16b,id:"minecraft:ender_eye",Count:1b,tag:{pagechange:1}}]}] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
-execute as @s[scores={page=2}] unless entity @s[nbt={EnderItems:[{Slot:16b,id:"minecraft:ender_eye",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/change/armorstand_invisible
+execute as @s[scores={page=2}] at @s if score invincible_time setting matches 1.. unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:emerald_block",Count:1b,tag:{pagechange:1}}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
+execute as @s[scores={page=2}] at @s if score invincible_time setting matches 1.. unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:emerald_block",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/modify/invincible_time
 
-execute as @s[scores={page=2}] unless entity @s[nbt={EnderItems:[{Slot:18b,id:"minecraft:barrier",Count:1b,tag:{pagechange:1}}]}] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
-execute as @s[scores={page=2}] unless entity @s[nbt={EnderItems:[{Slot:18b,id:"minecraft:barrier",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/ender_chest/change/1
+execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:iron_ingot",Count:1b,tag:{pagechange:1}}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
+execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:iron_ingot",Count:1b,tag:{pagechange:1}}]}] run scoreboard players remove #invincible_time setting 10
+execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:iron_ingot",Count:1b,tag:{pagechange:1}}]}] run loot replace entity @s enderchest.12 loot werewolf:invincible_time/plus_10
+execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:iron_ingot",Count:1b,tag:{pagechange:1}}]}] run loot replace entity @s enderchest.14 loot werewolf:invincible_time/minus_10

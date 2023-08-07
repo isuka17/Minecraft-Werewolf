@@ -14,7 +14,7 @@ kill @e[tag=dammed_revival_point]
 bossbar remove thief
 bossbar remove invincible
 bossbar remove camouflage
-execute if score #ON/OFF setting_preview matches 1 run scoreboard objectives setdisplay sidebar setting_preview
+execute if score #preview setting_preview matches 1 run scoreboard objectives setdisplay sidebar setting_preview
 
 # リザルト
 tellraw @a [{"text":"-----------------------------------","color":"green"}]
@@ -35,7 +35,7 @@ execute if entity @a[tag=medium] run tellraw @a [{"text":"・"},{"text":"霊媒�
 execute if entity @a[tag=sharers] run tellraw @a [{"text":"・"},{"text":"共有者\n   ","color":"green","bold":true},{"selector":"@a[tag=sharers]","bold":false,"color":"green"}]
 execute if entity @a[tag=knight] run tellraw @a [{"text":"・"},{"text":"騎士\n   ","color":"gold","bold":true},{"selector":"@a[tag=knight]","bold":false,"color":"gold"}]
 execute if entity @a[tag=detective] run tellraw @a [{"text":"・"},{"text":"探偵\n   ","color":"#a65300","bold":true},{"selector":"@a[tag=detective]","bold":false,"color":"#a65300"}]
-execute if entity @a[tag=villager] run tellraw @a [{"text":"・"},{"text":"村人\n   ","color":"#0080ff","bold":true},{"selector":"@a[tag=villager]","bold":false,"color":"blue"}]
+execute if entity @a[tag=villager] run tellraw @a [{"text":"・"},{"text":"村人\n   ","color":"#0080ff","bold":true},{"selector":"@a[tag=villager]","bold":false,"color":"#0080ff"}]
 execute if entity @a[tag=dammed] run tellraw @a [{"text":"・"},{"text":"呪われし者\n   ","color":"aqua","bold":true},{"selector":"@a[tag=dammed]","bold":false,"color":"aqua"}]
 execute if entity @a[tag=wolf_possession] run tellraw @a [{"text":"・"},{"text":"狼憑き\n   ","color":"dark_green","bold":true},{"selector":"@a[tag=wolf_possession]","bold":false,"color":"dark_green"}]
 tellraw @a {"text":"-----------------------------------","color":"green"}

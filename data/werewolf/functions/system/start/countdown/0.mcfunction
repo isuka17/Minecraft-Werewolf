@@ -1,6 +1,6 @@
 title @a title {"text":"ゲーム開始","color":"gold","bold":true}
 execute if score ランダムスタート setting matches 0 as @a at @s run playsound minecraft:entity.wolf.howl master @s ~ ~ ~ 1 1
-function werewolf:system/start/casting
+function werewolf:system/start/start
 schedule clear werewolf:system/start/countdown/0
 schedule clear werewolf:system/start/countdown/1
 schedule clear werewolf:system/start/countdown/2

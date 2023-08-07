@@ -47,7 +47,7 @@ scoreboard players set @a teleporter_use 0
 scoreboard players set @a co 0
 scoreboard players set @a luminous_bottle 0
 scoreboard players set @a blackout 0
-scoreboard players set @a blackhole3 0
+scoreboard players set @a blackhole 0
 scoreboard players set @a balloon 0
 scoreboard players set @a item_select 0
 scoreboard players set @a quartz_craft 0
@@ -56,8 +56,6 @@ scoreboard players set @a deadbody 0
 scoreboard players set @a killlog_deathCount 0
 scoreboard players set @a killlog_killcount 0
 scoreboard players set camouflage setting 0
-scoreboard objectives remove allplayer_role
-scoreboard objectives add allplayer_role trigger {"text":"全員の役職"}
 
 # 参加プレイヤーを抽選
 tag @a remove join
@@ -288,3 +286,24 @@ execute as @a[scores={item=14}] at @s run data modify entity @e[type=item,tag=sp
 execute as @a[scores={item=15}] at @s run data modify entity @e[type=item,tag=special_item,sort=nearest,limit=1] Item set from storage item 15
 kill @e[tag=special_item,nbt={Item:{id:"minecraft:bedrock"}}]
 item replace entity @a[tag=join] hotbar.7 with written_book{pages:['["",{"text":"\\u6751\\u4eba","color":"blue"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 1"}},{"text":"\\n\\n"},{"text":"\\u5360\\u3044\\u5e2b","color":"#CFC100"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 2"}},{"text":"\\n\\n"},{"text":"\\u970a\\u5a92\\u5e2b","color":"dark_aqua"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 3"}},{"text":"\\n\\n"},{"text":"\\u5171\\u6709\\u8005","color":"dark_green"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 4"}},{"text":"\\n\\n"},{"text":"\\u9a0e\\u58eb","color":"gold"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 5"}},{"text":"\\n\\n"},{"text":"\\u63a2\\u5075","color":"#A43D00"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 6"}}]','["",{"text":"\\u5996\\u72d0","color":"dark_purple"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 7"}},{"text":"\\n\\n"},{"text":"\\u80cc\\u5fb3\\u8005","color":"dark_gray"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 8"}},{"text":"\\n\\n"},{"text":"\\u602a\\u76d7","color":"gold"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 10"}},{"text":"\\n\\n"},{"text":"\\u30a2\\u30ea\\u30b9","color":"#CBA400"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 9"}}]','["",{"text":"\\u4eba\\u72fc","color":"dark_red"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 11"}},{"text":"\\n\\n"},{"text":"\\u9b54\\u5973","color":"dark_red"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 12"}},{"text":"\\n\\n"},{"text":"\\u30d5\\u30a7\\u30a4\\u30ab\\u30fc","color":"dark_red"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 13"}},{"text":"\\n\\n"},{"text":"\\u72c2\\u4eba","color":"light_purple"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 14"}},{"text":"\\n\\n"},{"text":"\\u72c2\\u4fe1\\u8005","color":"light_purple"},{"text":"\\u3092","color":"reset"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 15"}},{"text":"\\n "}]','["",{"text":"\\u767d\\u78ba\\u5b9a\\u3092"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 16"}},{"text":"\\n\\n\\u9ed2\\u78ba\\u5b9a\\u3092"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 17"}},{"text":"\\n\\n\\u7247\\u767d\\u3092"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 18"}},{"text":"\\n\\n\\u30b0\\u30ec\\u30fc\\u3092"},{"text":"CO\\u3059\\u308b","clickEvent":{"action":"run_command","value":"/trigger co set 19"}}]'],title:"役職CO本",author:"",Enchantments:[{id:"vanishing_curse",lvl:1}]}
+
+# 無敵時間
+scoreboard players operation #残り無敵時間 setting = #invincible_time setting
+execute if score invincible_time setting matches 1.. run bossbar add invincible ""
+execute store result bossbar invincible max run scoreboard players get #残り無敵時間 setting
+bossbar set invincible_time players @a[tag=join_request]
+bossbar set invincible_time color yellow
+
+# 役職を通知
+tag @a[tag=normal_wolf] add wolf
+tag @a[tag=faker] add wolf
+tag @a[tag=witch] add wolf
+tag @a[tag=!normal_wolf,tag=!faker,tag=!witch] remove wolf
+
+tellraw @s[tag=wolf] [{"text":"[Werewolf] ","color":"red"},{"text":"仲間の人狼:","color":"red"},{"selector":"@a[tag=wolf,distance=0.1..]"}]
+tellraw @s[tag=fanatic] [{"text":"[Werewolf] ","color":"red"},{"text":"今回の人狼:","color":"red"},{"selector":"@a[tag=wolf]"}]
+
+execute if score immoralist setting matches 1.. run tellraw @s[tag=fox] [{"text":"[Werewolf] ","color":"red"},{"text":"背徳者:","color":"#a042ff"},{"selector":"@a[tag=immoral]","color":"#a042ff"}]
+execute if score fox setting matches 1.. run tellraw @s[tag=immoral] [{"text":"[Werewolf] ","color":"red"},{"text":"妖狐:","color":"gray"},{"selector":"@a[tag=fox]","color":"gray"}]
+
+tellraw @s[tag=sharers] [{"text":"[Werewolf] ","color":"red"},{"text":"相方:","color":"green"},{"selector":"@a[tag=sharers,distance=0.1..]","color":"green"}]

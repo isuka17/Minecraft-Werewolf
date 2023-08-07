@@ -2,8 +2,7 @@
 scoreboard players add deadbody setting 1
 execute if score deadbody setting matches 2 run scoreboard players set deadbody setting 0
 
-execute if score deadbody setting matches 0 run item replace entity @s enderchest.12 with redstone_ore{display:{Name:'{"text":"死体を生成 現在:オフ","color":"red","italic":false}'},pagechange:1}
-execute if score deadbody setting matches 1.. run item replace entity @s enderchest.12 with redstone_ore{display:{Name:'{"text":"死体を生成 現在:オン","color":"red","italic":false}'},pagechange:1}
+item replace entity @s enderchest.11 with skeleton_skull{display:{Name:'{"text":"死体設定","color":"red","italic":false}',Lore:['[{"text":"[","color":"white","italic":false},{"keybind":"key.attack","color":"light_purple","italic":false},{"text":"] または ","color":"white","italic":false}]','[{"text":"[","color":"white","italic":false},{"keybind":"key.use","color":"light_purple","italic":false},{"text":"] で"},{"text":"死体設定","color":"red"},{"text":"ページに移動する"}]']},pagechange:1}
 
 team add red
 team modify red color red
