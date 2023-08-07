@@ -10,7 +10,7 @@ function werewolf:system/items/blackhole
 function werewolf:system/items/blackout
 function werewolf:system/items/energydrink
 function werewolf:system/items/mine
-function werewolf:system/items/item_use
+function werewolf:system/items/summon_interaction
 function werewolf:system/items/co_book
 function werewolf:system/items/stanball
 function werewolf:system/items/skyhighdive

@@ -1,5 +1,5 @@
 # 特定のアイテムを手に持った状態でinteractionに触れたプレイヤーがfunctionを実行
-execute as @s[nbt={SelectedItem:{id:"minecraft:nether_star",tag:{witch_use:1}}},scores={ability_usecount=1..}] at @s run function werewolf:system/ability/witch/madman_create
+execute as @s[nbt={SelectedItem:{id:"minecraft:nether_star",tag:{witch_use:1}}},scores={ability_usecount=1..}] at @s run function werewolf:system/ability/witch/create_madman
 execute as @s[nbt={SelectedItem:{id:"minecraft:nether_star",tag:{faker_use:1}}},scores={ability_usecount=1..}] at @s run function werewolf:system/ability/fake
 execute as @s[nbt={SelectedItem:{id:"minecraft:player_head",tag:{camouflage:1}}}] at @s run function werewolf:system/items/camouflage
 execute as @s[nbt={SelectedItem:{id:"minecraft:nether_star",tag:{cleaner_use:1}}},scores={ability_usecount=1..}] at @s run function werewolf:system/ability/clean
