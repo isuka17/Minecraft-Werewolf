@@ -1,21 +1,21 @@
 #盗まれたプレイヤーにstolenタグを付与
 
 # タグを付与
-execute if entity @a[scores={thief=1}] run tag @a[scores={playernumber=1}] add stolen
-execute if entity @a[scores={thief=2}] run tag @a[scores={playernumber=2}] add stolen
-execute if entity @a[scores={thief=3}] run tag @a[scores={playernumber=3}] add stolen
-execute if entity @a[scores={thief=4}] run tag @a[scores={playernumber=4}] add stolen
-execute if entity @a[scores={thief=5}] run tag @a[scores={playernumber=5}] add stolen
-execute if entity @a[scores={thief=6}] run tag @a[scores={playernumber=6}] add stolen
-execute if entity @a[scores={thief=7}] run tag @a[scores={playernumber=7}] add stolen
-execute if entity @a[scores={thief=8}] run tag @a[scores={playernumber=8}] add stolen
-execute if entity @a[scores={thief=9}] run tag @a[scores={playernumber=9}] add stolen
-execute if entity @a[scores={thief=10}] run tag @a[scores={playernumber=10}] add stolen
-execute if entity @a[scores={thief=11}] run tag @a[scores={playernumber=11}] add stolen
-execute if entity @a[scores={thief=12}] run tag @a[scores={playernumber=12}] add stolen
-execute if entity @a[scores={thief=13}] run tag @a[scores={playernumber=13}] add stolen
-execute if entity @a[scores={thief=14}] run tag @a[scores={playernumber=14}] add stolen
-execute if entity @a[scores={thief=15..}] run tag @a[scores={playernumber=15}] add stolen
+execute if entity @a[scores={thief=1}] run tag @a[scores={mwd_number=1}] add stolen
+execute if entity @a[scores={thief=2}] run tag @a[scores={mwd_number=2}] add stolen
+execute if entity @a[scores={thief=3}] run tag @a[scores={mwd_number=3}] add stolen
+execute if entity @a[scores={thief=4}] run tag @a[scores={mwd_number=4}] add stolen
+execute if entity @a[scores={thief=5}] run tag @a[scores={mwd_number=5}] add stolen
+execute if entity @a[scores={thief=6}] run tag @a[scores={mwd_number=6}] add stolen
+execute if entity @a[scores={thief=7}] run tag @a[scores={mwd_number=7}] add stolen
+execute if entity @a[scores={thief=8}] run tag @a[scores={mwd_number=8}] add stolen
+execute if entity @a[scores={thief=9}] run tag @a[scores={mwd_number=9}] add stolen
+execute if entity @a[scores={thief=10}] run tag @a[scores={mwd_number=10}] add stolen
+execute if entity @a[scores={thief=11}] run tag @a[scores={mwd_number=11}] add stolen
+execute if entity @a[scores={thief=12}] run tag @a[scores={mwd_number=12}] add stolen
+execute if entity @a[scores={thief=13}] run tag @a[scores={mwd_number=13}] add stolen
+execute if entity @a[scores={thief=14}] run tag @a[scores={mwd_number=14}] add stolen
+execute if entity @a[scores={thief=15..}] run tag @a[scores={mwd_number=15}] add stolen
 
 # stolenタグを所持しているプレイヤーの役職によって怪盗にタグを付与
 execute if entity @a[tag=normal_wolf,tag=stolen] run tag @a[tag=thief] add normal_wolf
@@ -71,7 +71,7 @@ tellraw @a[scores={thief=1..},tag=fanatic] [{"text":"[Werewolf] ","color":"red"}
 tellraw @a[scores={thief=1..},tag=fox] [{"text":"[Werewolf] ","color":"red"},{"selector":"@a[tag=stolen]"},{"text":"から妖狐を盗みました"}]
 tellraw @a[scores={thief=1..},tag=immoral] [{"text":"[Werewolf] ","color":"red"},{"selector":"@a[tag=stolen]"},{"text":"から背徳者を盗みました"}]
 tellraw @a[scores={thief=1..},tag=alice] [{"text":"[Werewolf] ","color":"red"},{"selector":"@a[tag=stolen]"},{"text":"からアリスを盗みました"}]
-tellraw @a[scores={thief=1..},tag=seer] [{"text":"[Werewolf] ","color":"red"},{"selector":"@a[tag=stolen]"},{"text":"から預言者を盗みました"}]
+tellraw @a[scores={thief=1..},tag=seer] [{"text":"[Werewolf] ","color":"red"},{"selector":"@a[tag=stolen]"},{"text":"から予言者を盗みました"}]
 tellraw @a[scores={thief=1..},tag=medium] [{"text":"[Werewolf] ","color":"red"},{"selector":"@a[tag=stolen]"},{"text":"から霊媒師を盗みました"}]
 tellraw @a[scores={thief=1..},tag=sharer] [{"text":"[Werewolf] ","color":"red"},{"selector":"@a[tag=stolen]"},{"text":"から共有者を盗みました"}]
 tellraw @a[scores={thief=1..},tag=knight] [{"text":"[Werewolf] ","color":"red"},{"selector":"@a[tag=stolen]"},{"text":"から騎士を盗みました"}]
@@ -87,7 +87,7 @@ item replace entity @a[scores={thief=1..},tag=medium] hotbar.8 with nether_star{
 item replace entity @a[scores={thief=1..},tag=knight] hotbar.8 with nether_star{display:{Name:'{"text":"能力使用","italic":false}'},knight_use:1,Enchantments:[{id:"vanishing_curse",lvl:1}]}
 item replace entity @a[scores={thief=1..},tag=detective] hotbar.8 with nether_star{display:{Name:'{"text":"能力使用","italic":false}'},detective_use:1,Enchantments:[{id:"vanishing_curse",lvl:1}]}
 
-# 怪盗が預言者/霊媒師/騎士/探偵を盗んだ場合、能力の使用を許可
+# 怪盗が予言者/霊媒師/騎士/探偵を盗んだ場合、能力の使用を許可
 scoreboard players add @a[scores={thief=1..},tag=seer] ability_usecount 1
 scoreboard players add @a[scores={thief=1..},tag=medium] ability_usecount 1
 scoreboard players add @a[scores={thief=1..},tag=knight] ability_usecount 1
@@ -98,7 +98,7 @@ scoreboard players enable @a[scores={thief=1..},tag=medium] medium
 scoreboard players enable @a[scores={thief=1..},tag=knight] guard
 
 # 後処理(fortuneタグを削除、スコアをセット)
-execute if entity @a[scores={thief=1..}] run scoreboard players set 怪盗の待機時間 setting 1
+execute if entity @a[scores={thief=1..}] run scoreboard players set 怪盗の待機時間 mwd_settings 1
 execute as @a[scores={thief=1..}] at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 1.5
 scoreboard players set @a thief 0
 tag @a remove stolen

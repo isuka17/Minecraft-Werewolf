@@ -28,10 +28,10 @@ execute as @s[scores={page=1}] unless entity @s[nbt={EnderItems:[{Slot:10b,id:"m
 execute as @s[scores={page=1}] unless entity @s[nbt={EnderItems:[{Slot:10b,id:"minecraft:iron_horse_armor",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/ender_chest/change/page2
 
 execute as @s[scores={page=1}] unless entity @s[nbt={EnderItems:[{Slot:11b,id:"minecraft:skeleton_skull",Count:1b,tag:{pagechange:1}}]}] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
-execute as @s[scores={page=1}] unless entity @s[nbt={EnderItems:[{Slot:11b,id:"minecraft:skeleton_skull",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/modify/deadbody
+execute as @s[scores={page=1}] unless entity @s[nbt={EnderItems:[{Slot:11b,id:"minecraft:skeleton_skull",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/ender_chest/change/page3
 
 execute as @s[scores={page=1}] unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:quartz",Count:1b,tag:{pagechange:1}}]}] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
-execute as @s[scores={page=1}] unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:quartz",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/modify/quartz
+execute as @s[scores={page=1}] unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:quartz",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/ender_chest/change/page4
 
 execute as @s[scores={page=1}] unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:emerald",Count:1b,tag:{pagechange:1}}]}] at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
-execute as @s[scores={page=1}] unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:emerald",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/ender_chest/change/page2
+execute as @s[scores={page=1}] unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:emerald",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/ender_chest/change/page5

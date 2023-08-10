@@ -1,6 +1,6 @@
 #スタンボール
 execute at @e[type=snowball] run summon minecraft:armor_stand ~ ~ ~ {Invulnerable:1b,Small:1,Invisible:1,NoGravity:1,Tags:["stanball"]}
-scoreboard players add @e[type=minecraft:armor_stand,tag=stanball] setting 1
+scoreboard players add @e[type=minecraft:armor_stand,tag=stanball] mwd_settings 1
 execute as @e[type=armor_stand,tag=stanball,scores={setting=1}] at @s run kill @e[type=minecraft:armor_stand,tag=stanball,scores={setting=2},distance=..5]
 execute at @e[type=snowball] run particle minecraft:end_rod ~ ~0.15 ~ 0 0 0 0.2 2 force @a
 execute at @e[type=snowball] run playsound minecraft:entity.firework_rocket.blast master @a ~ ~ ~ 2 1.4

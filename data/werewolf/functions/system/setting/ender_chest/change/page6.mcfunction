@@ -1,0 +1,39 @@
+execute if score wolf mwd_settings matches 0 run item replace entity @s enderchest.0 with red_stained_glass{display:{Name:'{"text":"人狼の人数設定 現在:0人","color":"red","italic":false}'},pagechange:1,wolf:1}
+execute if score wolf mwd_settings matches 1 run item replace entity @s enderchest.0 with red_stained_glass{display:{Name:'{"text":"人狼の人数設定 現在:1人","color":"red","italic":false}'},pagechange:1,wolf:1}
+execute if score wolf mwd_settings matches 2 run item replace entity @s enderchest.0 with red_stained_glass{display:{Name:'{"text":"人狼の人数設定 現在:2人","color":"red","italic":false}'},pagechange:1,wolf:1}
+execute if score wolf mwd_settings matches 3 run item replace entity @s enderchest.0 with red_stained_glass{display:{Name:'{"text":"人狼の人数設定 現在:3人","color":"red","italic":false}'},pagechange:1,wolf:1}
+execute if score witch mwd_settings matches 0 run item replace entity @s enderchest.1 with red_stained_glass{display:{Name:'{"text":"魔女の人数設定 現在:0人","color":"red","italic":false}'},pagechange:1,wolf:2}
+execute if score witch mwd_settings matches 1 run item replace entity @s enderchest.1 with red_stained_glass{display:{Name:'{"text":"魔女の人数設定 現在:1人","color":"red","italic":false}'},pagechange:1,wolf:2}
+execute if score faker mwd_settings matches 0 run item replace entity @s enderchest.2 with red_stained_glass{display:{Name:'{"text":"フェイカーの人数設定 現在:0人","color":"red","italic":false}'},pagechange:1,wolf:3}
+execute if score faker mwd_settings matches 1 run item replace entity @s enderchest.2 with red_stained_glass{display:{Name:'{"text":"フェイカーの人数設定 現在:1人","color":"red","italic":false}'},pagechange:1,wolf:3}
+execute if score madman mwd_settings matches 0 run item replace entity @s enderchest.3 with pink_stained_glass{display:{Name:'{"text":"狂人の人数設定 現在:0人","color":"light_purple","italic":false}'},pagechange:1,madman:1}
+execute if score madman mwd_settings matches 1 run item replace entity @s enderchest.3 with pink_stained_glass{display:{Name:'{"text":"狂人の人数設定 現在:1人","color":"light_purple","italic":false}'},pagechange:1,madman:1}
+execute if score fanatic mwd_settings matches 0 run item replace entity @s enderchest.4 with pink_stained_glass{display:{Name:'{"text":"狂信者の人数設定 現在:0人","color":"light_purple","italic":false}'},pagechange:1,fanatic:1}
+execute if score fanatic mwd_settings matches 1 run item replace entity @s enderchest.4 with pink_stained_glass{display:{Name:'{"text":"狂信者の人数設定 現在:1人","color":"light_purple","italic":false}'},pagechange:1,fanatic:1}
+execute if score fox mwd_settings matches 0 run item replace entity @s enderchest.9 with purple_stained_glass{display:{Name:'{"text":"妖狐の人数設定 現在:0人","color":"dark_purple","italic":false}'},pagechange:1,fox:1}
+execute if score fox mwd_settings matches 1 run item replace entity @s enderchest.9 with purple_stained_glass{display:{Name:'{"text":"妖狐の人数設定 現在:1人","color":"dark_purple","italic":false}'},pagechange:1,fox:1}
+execute if score immoralist mwd_settings matches 0 run item replace entity @s enderchest.10 with gray_stained_glass{display:{Name:'{"text":"背徳者の人数設定 現在:0人","color":"dark_gray","italic":false}'},pagechange:1,immoralist:1}
+execute if score immoralist mwd_settings matches 1 run item replace entity @s enderchest.10 with gray_stained_glass{display:{Name:'{"text":"背徳者の人数設定 現在:1人","color":"dark_gray","italic":false}'},pagechange:1,immoralist:1}
+execute if score thief mwd_settings matches 0 run item replace entity @s enderchest.11 with orange_stained_glass{display:{Name:'{"text":"怪盗の人数設定 現在:0人","color":"#ff5800","italic":false}'},pagechange:1,thief:1}
+execute if score thief mwd_settings matches 1 run item replace entity @s enderchest.11 with orange_stained_glass{display:{Name:'{"text":"怪盗の人数設定 現在:1人","color":"#ff5800","italic":false}'},pagechange:1,thief:1}
+execute if score alice mwd_settings matches 0 run item replace entity @s enderchest.12 with yellow_stained_glass{display:{Name:'{"text":"アリスの人数設定 現在:0人","color":"yellow","italic":false}'},pagechange:1,alice:1}
+execute if score alice mwd_settings matches 1 run item replace entity @s enderchest.12 with yellow_stained_glass{display:{Name:'{"text":"アリスの人数設定 現在:1人","color":"yellow","italic":false}'},pagechange:1,alice:1}
+execute if score seer mwd_settings matches 0 run item replace entity @s enderchest.18 with yellow_stained_glass{display:{Name:'{"text":"予言者の人数設定 現在:0人","color":"yellow","italic":false}'},pagechange:1,seer:1}
+execute if score seer mwd_settings matches 1 run item replace entity @s enderchest.18 with yellow_stained_glass{display:{Name:'{"text":"予言者の人数設定 現在:1人","color":"yellow","italic":false}'},pagechange:1,seer:1}
+execute if score medium mwd_settings matches 0 run item replace entity @s enderchest.19 with cyan_stained_glass{display:{Name:'{"text":"霊媒師の人数設定 現在:0人","color":"dark_aqua","italic":false}'},pagechange:1,medium:1}
+execute if score medium mwd_settings matches 1 run item replace entity @s enderchest.19 with cyan_stained_glass{display:{Name:'{"text":"霊媒師の人数設定 現在:1人","color":"dark_aqua","italic":false}'},pagechange:1,medium:1}
+execute if score sharer mwd_settings matches 0 run item replace entity @s enderchest.20 with lime_stained_glass{display:{Name:'{"text":"共有者の人数設定 現在:0人","color":"green","italic":false}'},pagechange:1,sharer:1}
+execute if score sharer mwd_settings matches 1 run item replace entity @s enderchest.20 with lime_stained_glass{display:{Name:'{"text":"共有者の人数設定 現在:1人","color":"green","italic":false}'},pagechange:1,sharer:1}
+execute if score knight mwd_settings matches 0 run item replace entity @s enderchest.21 with orange_stained_glass{display:{Name:'{"text":"騎士の人数設定 現在:0人","color":"gold","italic":false}'},pagechange:1,knight:1}
+execute if score knight mwd_settings matches 1 run item replace entity @s enderchest.21 with orange_stained_glass{display:{Name:'{"text":"騎士の人数設定 現在:1人","color":"gold","italic":false}'},pagechange:1,knight:1}
+execute if score detective mwd_settings matches 0 run item replace entity @s enderchest.22 with brown_stained_glass{display:{Name:'{"text":"探偵の人数設定 現在:0人","color":"#933a00","italic":false}'},pagechange:1,detective:1}
+execute if score detective mwd_settings matches 1 run item replace entity @s enderchest.22 with brown_stained_glass{display:{Name:'{"text":"探偵の人数設定 現在:1人","color":"#933a00","italic":false}'},pagechange:1,detective:1}
+execute if score dammed mwd_settings matches 0 run item replace entity @s enderchest.23 with blue_stained_glass{display:{Name:'{"text":"呪われし者の人数設定 現在:0人","color":"aqua","italic":false}'},pagechange:1,dammed:1}
+execute if score dammed mwd_settings matches 1 run item replace entity @s enderchest.23 with blue_stained_glass{display:{Name:'{"text":"呪われし者の人数設定 現在:1人","color":"aqua","italic":false}'},pagechange:1,dammed:1}
+execute if score wolf_possession mwd_settings matches 0 run item replace entity @s enderchest.24 with green_stained_glass{display:{Name:'{"text":"狼憑きの出現確率 現在:0%","color":"dark_green","italic":false}'},pagechange:1,wolf_possession:1}
+execute if score wolf_possession mwd_settings matches 1 run item replace entity @s enderchest.24 with green_stained_glass{display:{Name:'{"text":"狼憑きの出現確率 現在:30%","color":"dark_green","italic":false}'},pagechange:1,wolf_possession:1}
+execute if score wolf_possession mwd_settings matches 2 run item replace entity @s enderchest.24 with green_stained_glass{display:{Name:'{"text":"狼憑きの出現確率 現在:50%","color":"dark_green","italic":false}'},pagechange:1,wolf_possession:1}
+execute if score wolf_possession mwd_settings matches 3 run item replace entity @s enderchest.24 with green_stained_glass{display:{Name:'{"text":"狼憑きの出現確率 現在:100%","color":"dark_green","italic":false}'},pagechange:1,wolf_possession:1}
+item replace entity @s enderchest.8 with spectral_arrow{display:{Name:'{"text":"次のページ","color":"yellow","italic":false}'},pagechange:1}
+item replace entity @s enderchest.26 with barrier{display:{Name:'{"text":"前のページに戻る","color":"red","italic":false}'},pagechange:1}
+scoreboard players set @s page 6

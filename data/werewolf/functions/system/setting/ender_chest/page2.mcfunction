@@ -26,17 +26,17 @@ execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:0b,
 execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:0b,id:"minecraft:barrier",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/ender_chest/change/page1
 
 execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:gold_ingot",Count:1b,tag:{pagechange:1}}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
-execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:gold_ingot",Count:1b,tag:{pagechange:1}}]}] run scoreboard players add #invincible_time setting 10
+execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:gold_ingot",Count:1b,tag:{pagechange:1}}]}] run scoreboard players add #invincible_time mwd_settings 10
 execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:gold_ingot",Count:1b,tag:{pagechange:1}}]}] run loot replace entity @s enderchest.14 loot werewolf:invincible_time/minus_10
 execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:12b,id:"minecraft:gold_ingot",Count:1b,tag:{pagechange:1}}]}] run loot replace entity @s enderchest.12 loot werewolf:invincible_time/plus_10
 
-execute as @s[scores={page=2}] at @s if score invincible_time setting matches 0 unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:redstone_block",Count:1b,tag:{pagechange:1}}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
-execute as @s[scores={page=2}] at @s if score invincible_time setting matches 0 unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:redstone_block",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/modify/invincible_time
+execute as @s[scores={page=2}] at @s if score invincible_time mwd_settings matches 0 unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:redstone_block",Count:1b,tag:{pagechange:1}}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
+execute as @s[scores={page=2}] at @s if score invincible_time mwd_settings matches 0 unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:redstone_block",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/modify/invincible_time
 
-execute as @s[scores={page=2}] at @s if score invincible_time setting matches 1.. unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:emerald_block",Count:1b,tag:{pagechange:1}}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
-execute as @s[scores={page=2}] at @s if score invincible_time setting matches 1.. unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:emerald_block",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/modify/invincible_time
+execute as @s[scores={page=2}] at @s if score invincible_time mwd_settings matches 1.. unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:emerald_block",Count:1b,tag:{pagechange:1}}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
+execute as @s[scores={page=2}] at @s if score invincible_time mwd_settings matches 1.. unless entity @s[nbt={EnderItems:[{Slot:13b,id:"minecraft:emerald_block",Count:1b,tag:{pagechange:1}}]}] run function werewolf:system/setting/modify/invincible_time
 
 execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:iron_ingot",Count:1b,tag:{pagechange:1}}]}] run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 2
-execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:iron_ingot",Count:1b,tag:{pagechange:1}}]}] run scoreboard players remove #invincible_time setting 10
+execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:iron_ingot",Count:1b,tag:{pagechange:1}}]}] run scoreboard players remove #invincible_time mwd_settings 10
 execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:iron_ingot",Count:1b,tag:{pagechange:1}}]}] run loot replace entity @s enderchest.12 loot werewolf:invincible_time/plus_10
 execute as @s[scores={page=2}] at @s unless entity @s[nbt={EnderItems:[{Slot:14b,id:"minecraft:iron_ingot",Count:1b,tag:{pagechange:1}}]}] run loot replace entity @s enderchest.14 loot werewolf:invincible_time/minus_10

@@ -39,6 +39,7 @@ tp @a[scores={shuffle=14}] @e[tag=shuffle13,limit=1]
 
 # 後処理
 execute as @a at @s run playsound minecraft:entity.illusioner.mirror_move master @s ~ ~ ~ 1 1
+effect give @a[tag=join] resistance 1 5 true
 kill @e[tag=shuffle1]
 kill @e[tag=shuffle2]
 kill @e[tag=shuffle3]

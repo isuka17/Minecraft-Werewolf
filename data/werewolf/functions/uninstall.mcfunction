@@ -4,19 +4,19 @@ kill @e[tag=random_start]
 
 # スコアボードを削除
 scoreboard objectives remove setting
-scoreboard objectives remove playernumber
+scoreboard objectives remove mwd_number
 scoreboard objectives remove item
 scoreboard objectives remove deadbody
 scoreboard objectives remove co
-scoreboard objectives remove item_select
-scoreboard objectives remove death_process
+scoreboard objectives remove mwd_items_select
+scoreboard objectives remove death
 scoreboard objectives remove join
 scoreboard objectives remove actionbar
 scoreboard objectives remove quartz_craft
 scoreboard objectives remove flamethrower
-scoreboard objectives remove blackhole
-scoreboard objectives remove luminous_bottle
-scoreboard objectives remove blackout
+scoreboard objectives remove mwd_items_blackhole
+scoreboard objectives remove mwd_items_luminous_bottle
+scoreboard objectives remove mwd_items_blackout
 scoreboard objectives remove knight_guard
 scoreboard objectives remove balloon
 scoreboard objectives remove invincible_armor
@@ -33,14 +33,14 @@ scoreboard objectives remove guard
 scoreboard objectives remove spirit
 scoreboard objectives remove thief
 scoreboard objectives remove setting_preview
-scoreboard objectives remove killlog_killcount
-scoreboard objectives remove killlog_deathcount
+scoreboard objectives remove mwd_killlog_killcount
+scoreboard objectives remove mwd_killlog_deathcount
 
 # チーム削除
 team remove wolf
 team remove fox
 team remove ghost
-team remove sharers
+team remove sharer
 team remove lover
 team remove players
 team remove thief

@@ -1,19 +1,19 @@
 # spiritタグを付与
-execute if entity @a[scores={spirit=1}] run tag @a[scores={playernumber=1}] add spirit
-execute if entity @a[scores={spirit=2}] run tag @a[scores={playernumber=2}] add spirit
-execute if entity @a[scores={spirit=3}] run tag @a[scores={playernumber=3}] add spirit
-execute if entity @a[scores={spirit=4}] run tag @a[scores={playernumber=4}] add spirit
-execute if entity @a[scores={spirit=5}] run tag @a[scores={playernumber=5}] add spirit
-execute if entity @a[scores={spirit=6}] run tag @a[scores={playernumber=6}] add spirit
-execute if entity @a[scores={spirit=7}] run tag @a[scores={playernumber=7}] add spirit
-execute if entity @a[scores={spirit=8}] run tag @a[scores={playernumber=8}] add spirit
-execute if entity @a[scores={spirit=9}] run tag @a[scores={playernumber=9}] add spirit
-execute if entity @a[scores={spirit=10}] run tag @a[scores={playernumber=10}] add spirit
-execute if entity @a[scores={spirit=11}] run tag @a[scores={playernumber=11}] add spirit
-execute if entity @a[scores={spirit=12}] run tag @a[scores={playernumber=12}] add spirit
-execute if entity @a[scores={spirit=13}] run tag @a[scores={playernumber=13}] add spirit
-execute if entity @a[scores={spirit=14}] run tag @a[scores={playernumber=14}] add spirit
-execute if entity @a[scores={spirit=15..}] run tag @a[scores={playernumber=15}] add spirit
+execute if entity @a[scores={spirit=1}] run tag @a[scores={mwd_number=1}] add spirit
+execute if entity @a[scores={spirit=2}] run tag @a[scores={mwd_number=2}] add spirit
+execute if entity @a[scores={spirit=3}] run tag @a[scores={mwd_number=3}] add spirit
+execute if entity @a[scores={spirit=4}] run tag @a[scores={mwd_number=4}] add spirit
+execute if entity @a[scores={spirit=5}] run tag @a[scores={mwd_number=5}] add spirit
+execute if entity @a[scores={spirit=6}] run tag @a[scores={mwd_number=6}] add spirit
+execute if entity @a[scores={spirit=7}] run tag @a[scores={mwd_number=7}] add spirit
+execute if entity @a[scores={spirit=8}] run tag @a[scores={mwd_number=8}] add spirit
+execute if entity @a[scores={spirit=9}] run tag @a[scores={mwd_number=9}] add spirit
+execute if entity @a[scores={spirit=10}] run tag @a[scores={mwd_number=10}] add spirit
+execute if entity @a[scores={spirit=11}] run tag @a[scores={mwd_number=11}] add spirit
+execute if entity @a[scores={spirit=12}] run tag @a[scores={mwd_number=12}] add spirit
+execute if entity @a[scores={spirit=13}] run tag @a[scores={mwd_number=13}] add spirit
+execute if entity @a[scores={spirit=14}] run tag @a[scores={mwd_number=14}] add spirit
+execute if entity @a[scores={spirit=15..}] run tag @a[scores={mwd_number=15}] add spirit
 
 # 霊媒(wolfタグを所持しているか所持していないかで判別)
 execute if entity @a[tag=wolf,tag=spirit,team=ghost] run tellraw @a[scores={spirit=1..},tag=medium] [{"text":"[Werewolf] ","color":"red"},{"selector":"@a[tag=spirit]","color":"red"},{"text":"は人狼です。","color":"red"}]

@@ -5,4 +5,4 @@ title @a[tag=join_request] subtitle {"text":"≪村人陣営の勝利≫","color
 execute as @a[tag=join_request] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 0.3 1
 tellraw @a[tag=join_request] [{"text":"\n[Werewolf] ","color":"red"},{"text":"村人陣営の勝利です。","color":"#0080ff"}]
 tellraw @a[tag=join_request] [{"text":"[Werewolf] ","color":"red"},{"text":"役職の内訳は以下の通りです。","color":"white"}]
-function werewolf:system/end/reset
+function werewolf:system/finish/reset

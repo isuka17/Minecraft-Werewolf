@@ -1,5 +1,3 @@
-#クォーツ強化の共通設定
-
 # 失敗
 execute as @a[scores={ability_usecount=1..,quartz_craft=1..},tag=seer] run function werewolf:system/quartz/failure
 execute as @a[scores={ability_usecount=1..,quartz_craft=1..},tag=medium] run function werewolf:system/quartz/failure
