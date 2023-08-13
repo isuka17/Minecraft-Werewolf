@@ -1,4 +1,4 @@
-# Minecraft-Werewolf-Datapack
+# Minecraft Werewolf Datapack
 
 Minecraft v1.19.4からv1.20.1まで対応しています。
 
