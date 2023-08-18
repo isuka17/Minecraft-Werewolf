@@ -10,16 +10,16 @@ Minecraft v1.19.4からv1.20.1まで対応しています。
 
 ・アンインストール
 
-/function werewolf:uninstall
+/function isuka17_mwd:uninstall
 
 ・ゲーム管理権限の取得
 
-/function werewolf:op
+/function isuka17_mwd:op
 
 ・ゲームの開始
 
-/function #werewolf:start
+/function #isuka17_mwd:start
 
 ・ゲームの中断
 
-/function #werewolf:stop
+/function #isuka17_mwd:stop

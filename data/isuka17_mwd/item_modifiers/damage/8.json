@@ -1,0 +1,7 @@
+[
+    {
+      "function": "minecraft:set_nbt",
+      "tag": "{balloon_damage:8}"
+    }
+  ]
+  
