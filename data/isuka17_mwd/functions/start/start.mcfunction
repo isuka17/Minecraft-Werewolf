@@ -64,11 +64,11 @@ scoreboard players set 参加希望者数 mwd_settings 0
 execute store result score 参加希望者数 mwd_settings if entity @a[tag=join_request]
 execute if score 参加希望者数 mwd_settings matches ..15 run tag @a[tag=join_request] add join
 execute if score 参加希望者数 mwd_settings matches 16.. run tag @r[tag=join_request,limit=15] add join
-execute if score 参加希望者数 mwd_settings matches 16.. run team join ghost @a[tag=join_request,tag=!join]
-execute if score 参加希望者数 mwd_settings matches 16.. run tellraw @a [{"text":"参加希望者が16人を超えた為、以下のプレイヤーが観戦者となりました。\n"},{"selector":"@a[team=ghost]"}]
+execute if score 参加希望者数 mwd_settings matches 16.. run team join mwd_ghost @a[tag=join_request,tag=!join]
+execute if score 参加希望者数 mwd_settings matches 16.. run tellraw @a [{"text":"参加希望者が16人を超えた為、以下のプレイヤーが観戦者となりました。\n"},{"selector":"@a[team=mwd_ghost]"}]
 
 # いろいろ
-gamemode spectator @a[team=ghost]
+gamemode spectator @a[team=mwd_ghost]
 gamemode adventure @a[tag=join]
 kill @e[tag=deadbody]
 kill @e[type=arrow]
@@ -246,7 +246,7 @@ execute if entity @a[tag=thief] run function isuka17_mwd:start/thief
 
 # 無敵時間
 scoreboard players operation #残り無敵時間 mwd_settings = #invincible_time setting
-execute if score invincible_time mwd_settings matches 1.. run bossbar add invincible_time ""
+execute if score #無敵時間 mwd_settings matches 1.. run bossbar add invincible_time ""
 execute store result bossbar invincible_time max run scoreboard players get #残り無敵時間 setting
 bossbar set invincible_time players @a[tag=join_request]
 bossbar set invincible_time color yellow

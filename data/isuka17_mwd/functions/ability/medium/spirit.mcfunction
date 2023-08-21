@@ -16,9 +16,9 @@ execute if entity @a[scores={spirit=14}] run tag @a[scores={mwd_number=14}] add 
 execute if entity @a[scores={spirit=15..}] run tag @a[scores={mwd_number=15}] add spirit
 
 # 霊媒(wolfタグを所持しているか所持していないかで判別)
-execute if entity @a[tag=wolf,tag=spirit,team=ghost] run tellraw @a[scores={spirit=1..},tag=medium] [{"selector":"@a[tag=spirit]","color":"red"},{"text":"は人狼です。","color":"red"}]
-execute if entity @a[tag=!wolf,tag=spirit,team=ghost] run tellraw @a[scores={spirit=1..},tag=medium] [{"selector":"@a[tag=spirit]","color":"#0080ff"},{"text":"は人狼ではありません。","color":"#0080ff"}]
-execute if entity @a[tag=spirit,team=!ghost] run tellraw @a[scores={spirit=1..},tag=medium] [{"selector":"@a[tag=spirit]","color":"gray"},{"text":"生存しています。","color":"green"}]
+execute if entity @a[tag=wolf,tag=spirit,team=mwd_ghost] run tellraw @a[scores={spirit=1..},tag=medium] [{"selector":"@a[tag=spirit]","color":"red"},{"text":"は人狼です。","color":"red"}]
+execute if entity @a[tag=!wolf,tag=spirit,team=mwd_ghost] run tellraw @a[scores={spirit=1..},tag=medium] [{"selector":"@a[tag=spirit]","color":"#0080ff"},{"text":"は人狼ではありません。","color":"#0080ff"}]
+execute if entity @a[tag=spirit,team=!mwd_ghost] run tellraw @a[scores={spirit=1..},tag=medium] [{"selector":"@a[tag=spirit]","color":"gray"},{"text":"生存しています。","color":"green"}]
 
 # 怪盗に盗まれていた場合の霊媒結果
 tellraw @a[scores={spirit=1..},tag=!medium] [{"selector":"@a[tag=spirit]","color":"#0080ff"},{"text":"は人狼ではありません。","color":"#0080ff"}]

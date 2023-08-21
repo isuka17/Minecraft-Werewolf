@@ -29,3 +29,5 @@ execute as @e[type=item,tag=special_items] run data modify entity @s Item.Count 
 
 # special_itemsをkill
 kill @e[type=item,tag=special_items,nbt={Item:{id:"minecraft:bedrock"}}]
+
+give @p minecraft:potion{display:{Name:'{"text":"無敵のポーション","color":"#c58aff","italic":false}'},Potion:"minecraft:water",CustomPotionEffects:[{Id:11,Amplifier:4,Duration:100,ShowParticles:0b}],CustomPotionColor:10322175}

@@ -1,6 +1,6 @@
 #呪われし者の覚醒
 summon armor_stand ~ ~ ~ {Tags:["dammed_revive_point"],Invisible:1,Marker:1}
-tellraw @a[team=ghost] [{"selector":"@s"},{"text":" → 覚醒"}]
+tellraw @a[team=mwd_ghost] [{"selector":"@s"},{"text":" → 覚醒"}]
 tellraw @s [{"text":"あなたは呪われし者でした。"}]
 execute at @s run tellraw @s [{"text":"仲間の人狼："},{"selector":"@a[tag=wolf,distance=0.1..]"}]
 title @s times 10 70 20

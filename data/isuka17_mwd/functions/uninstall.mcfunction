@@ -39,7 +39,7 @@ scoreboard objectives remove mwd_killlog_deathcount
 # チーム削除
 team remove wolf
 team remove fox
-team remove ghost
+team remove mwd_ghost
 team remove sharer
 team remove lover
 team remove players

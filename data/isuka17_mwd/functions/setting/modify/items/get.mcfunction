@@ -1,5 +1,5 @@
 tellraw @s [{"text":"全てのアイテムを取得しました。","color":"aqua"}]
-item replace entity @s enderchest.9 with heart_of_the_sea{display:{Name:'{"text":"全てのアイテムを取得","italic":false,"color":"aqua"}'},pagechange:1}
+item replace entity @s enderchest.9 with heart_of_the_sea{display:{Name:'{"text":"全てのアイテムを取得","italic":false,"color":"aqua"}'},change_page:1}
 clear @s #isuka17_mwd:setting_item
 
 give @s slime_ball{display:{Name:'[{"text":"風船 ","color":"green","italic":false},{"text":"[10/10]","color":"gray","italic":false}]',Lore:['[{"text":"[","color":"white","italic":false},{"keybind":"key.sneak","color":"light_purple","italic":false},{"text":"] で使用","color":"white","italic":false}]','[{"text":"10秒間、","color":"white","italic":false},{"keybind":"key.sneak","color":"light_purple","italic":false},{"text":"を押している間だけ浮遊できる。","color":"white","italic":false}]']},balloon_damage:10,balloon:1}

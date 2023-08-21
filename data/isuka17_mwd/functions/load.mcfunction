@@ -25,11 +25,14 @@ scoreboard objectives add invincible_armor used:netherite_chestplate {"text":"[M
 scoreboard objectives add shuffle_book minecraft.used:minecraft.knowledge_book {"text":"[Minecraft人狼] 入れ替わりの書1","color":"red"}
 scoreboard objectives add shuffle dummy {"text":"[Minecraft人狼] 入れ替わりの書2","color":"red"}
 scoreboard objectives add mwd_ability dummy {"text":"[Minecraft人狼] 能力使用権","color":"red"}
-scoreboard objectives add page dummy {"text":"[Minecraft人狼] ページ数","color":"red"}
+scoreboard objectives add mwd_settings_page dummy {"text":"[Minecraft人狼] ページ数","color":"red"}
 scoreboard objectives add skyhighdive used:golden_boots {"text":"[Minecraft人狼] スカイハイダイブ","color":"red"}
 scoreboard objectives add mwd_random_start dummy {"text":"[Minecraft人狼] ランダムスタート","color":"red"}
 scoreboard objectives add mwd_killlog_killcount playerKillCount {"text":"[Minecraft人狼] キルログ1","color":"red"}
 scoreboard objectives add mwd_killlog_deathcount deathCount {"text":"[Minecraft人狼] キルログ2","color":"red"}
+
+# スコアボードを表示
+scoreboard objectives setdisplay sidebar mwd_settings
 
 # 初期設定
 execute unless score 人狼 mwd_settings matches 0.. run scoreboard players set 人狼 mwd_settings 0
@@ -55,7 +58,7 @@ scoreboard players set #werewolf mwd_settings 0
 team add wolf {"text":"人狼チャット","color":"red"}
 team add fox {"text":"妖狐チャット","color":"dark_purple"}
 team add sharer {"text":"共有者チャット","color":"green"}
-team add ghost {"text":"霊界チャット","color":"blue"}
+team add mwd_ghost {"text":"霊界チャット","color":"blue"}
 team add thief {"text":"怪盗","color":"#ff5800"}
 team add madman {"text":"狂人","color":"light_purple"}
 team add alice {"text":"アリス","color":"yellow"}

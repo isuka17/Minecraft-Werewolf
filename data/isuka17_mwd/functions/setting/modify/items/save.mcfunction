@@ -18,4 +18,4 @@ data modify storage items 16 set from entity @s EnderItems[{Slot:17b}]
 
 # 後処理
 tellraw @s [{"text":"アイテム設定を保存しました。","color":"yellow"}]
-item replace entity @s enderchest.18 with structure_void{display:{Name:'{"text":"アイテム設定を保存","italic":false,"color":"yellow"}'},pagechange:1}
+item replace entity @s enderchest.18 with structure_void{display:{Name:'{"text":"アイテム設定を保存","italic":false,"color":"yellow"}'},change_page:1}

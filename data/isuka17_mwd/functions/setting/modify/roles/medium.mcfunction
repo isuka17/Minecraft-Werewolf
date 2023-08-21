@@ -5,8 +5,8 @@ execute if score medium mwd_settings matches 2 run scoreboard players set medium
 execute if score medium mwd_settings matches 0 run tellraw @s [{"text":"霊媒師の数を","color":"dark_aqua"},{"text":"0人","bold":true},{"text":"に設定しました。","bold":false}]
 execute if score medium mwd_settings matches 1 run tellraw @s [{"text":"霊媒師の数を","color":"dark_aqua"},{"text":"1人","bold":true},{"text":"に設定しました。","bold":false}]
 
-execute if score medium mwd_settings matches 0 run item replace entity @s enderchest.19 with cyan_stained_glass{display:{Name:'{"text":"霊媒師の人数設定 現在:0人","color":"dark_aqua","italic":false}'},pagechange:1,medium:1}
-execute if score medium mwd_settings matches 1 run item replace entity @s enderchest.19 with cyan_stained_glass{display:{Name:'{"text":"霊媒師の人数設定 現在:1人","color":"dark_aqua","italic":false}'},pagechange:1,medium:1}
+execute if score medium mwd_settings matches 0 run item replace entity @s enderchest.19 with cyan_stained_glass{display:{Name:'{"text":"霊媒師の人数設定 現在:0人","color":"dark_aqua","italic":false}'},change_page:1,medium:1}
+execute if score medium mwd_settings matches 1 run item replace entity @s enderchest.19 with cyan_stained_glass{display:{Name:'{"text":"霊媒師の人数設定 現在:1人","color":"dark_aqua","italic":false}'},change_page:1,medium:1}
 
 team add dark_aqua
 team modify dark_aqua color dark_aqua

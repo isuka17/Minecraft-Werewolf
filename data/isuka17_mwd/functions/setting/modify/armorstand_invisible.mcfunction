@@ -10,4 +10,4 @@ execute if score #透明化/可視化 mwd_settings matches 0 as @e[tag=random_st
 execute if score #透明化/可視化 mwd_settings matches 1 as @e[tag=random_start] run data modify entity @s Invisible set value 1
 execute if score #透明化/可視化 mwd_settings matches 1 as @e[tag=random_start] run data modify entity @s Marker set value 1
 
-item replace entity @s enderchest.16 with ender_eye{display:{Name:'{"text":"ランダムスタート地点を可視化/透明化","color":"aqua","italic":false}'},pagechange:1}
+item replace entity @s enderchest.16 with ender_eye{display:{Name:'{"text":"ランダムスタート地点を可視化/透明化","color":"aqua","italic":false}'},change_page:1}

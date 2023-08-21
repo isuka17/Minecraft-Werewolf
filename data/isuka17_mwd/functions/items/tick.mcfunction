@@ -1,5 +1,4 @@
 #常時実行(item)
-clear @a[tag=join] glass_bottle
 execute as @e[type=item,nbt={Item:{id:"minecraft:nether_star"}}] run data modify entity @s PickupDelay set value 0
 execute as @e[type=item,nbt={Item:{id:"minecraft:leather_helmet"}}] run data modify entity @s PickupDelay set value 0
 

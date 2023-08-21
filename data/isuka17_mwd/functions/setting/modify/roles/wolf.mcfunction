@@ -7,10 +7,10 @@ execute if score wolf mwd_settings matches 1 run tellraw @s [{"text":"人狼の�
 execute if score wolf mwd_settings matches 2 run tellraw @s [{"text":"人狼の数を","color":"red"},{"text":"2人","bold":true},{"text":"に設定しました。","bold":false}]
 execute if score wolf mwd_settings matches 3 run tellraw @s [{"text":"人狼の数を","color":"red"},{"text":"3人","bold":true},{"text":"に設定しました。","bold":false}]
 
-execute if score wolf mwd_settings matches 0 run item replace entity @s enderchest.0 with red_stained_glass{display:{Name:'{"text":"人狼の人数設定 現在:0人","color":"red","italic":false}'},pagechange:1,wolf:1}
-execute if score wolf mwd_settings matches 1 run item replace entity @s enderchest.0 with red_stained_glass{display:{Name:'{"text":"人狼の人数設定 現在:1人","color":"red","italic":false}'},pagechange:1,wolf:1}
-execute if score wolf mwd_settings matches 2 run item replace entity @s enderchest.0 with red_stained_glass{display:{Name:'{"text":"人狼の人数設定 現在:2人","color":"red","italic":false}'},pagechange:1,wolf:1}
-execute if score wolf mwd_settings matches 3 run item replace entity @s enderchest.0 with red_stained_glass{display:{Name:'{"text":"人狼の人数設定 現在:3人","color":"red","italic":false}'},pagechange:1,wolf:1}
+execute if score wolf mwd_settings matches 0 run item replace entity @s enderchest.0 with red_stained_glass{display:{Name:'{"text":"人狼の人数設定 現在:0人","color":"red","italic":false}'},change_page:1,wolf:1}
+execute if score wolf mwd_settings matches 1 run item replace entity @s enderchest.0 with red_stained_glass{display:{Name:'{"text":"人狼の人数設定 現在:1人","color":"red","italic":false}'},change_page:1,wolf:1}
+execute if score wolf mwd_settings matches 2 run item replace entity @s enderchest.0 with red_stained_glass{display:{Name:'{"text":"人狼の人数設定 現在:2人","color":"red","italic":false}'},change_page:1,wolf:1}
+execute if score wolf mwd_settings matches 3 run item replace entity @s enderchest.0 with red_stained_glass{display:{Name:'{"text":"人狼の人数設定 現在:3人","color":"red","italic":false}'},change_page:1,wolf:1}
 
 team add red
 team modify red color red

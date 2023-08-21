@@ -5,8 +5,8 @@ execute if score camouflager mwd_settings matches 2 run scoreboard players set c
 execute if score camouflager mwd_settings matches 0 run tellraw @s [{"text":"カモフラージャーの数を","color":"red"},{"text":"0人","bold":true},{"text":"に設定しました。","bold":false}]
 execute if score camouflager mwd_settings matches 1 run tellraw @s [{"text":"カモフラージャーの数を","color":"red"},{"text":"1人","bold":true},{"text":"に設定しました。","bold":false}]
 
-execute if score camouflager mwd_settings matches 0 run item replace entity @s enderchest.3 with red_stained_glass{display:{Name:'{"text":"カモフラージャーの人数設定 現在:0人","color":"red","italic":false}'},pagechange:1,wolf:4}
-execute if score camouflager mwd_settings matches 1 run item replace entity @s enderchest.3 with red_stained_glass{display:{Name:'{"text":"カモフラージャーの人数設定 現在:1人","color":"red","italic":false}'},pagechange:1,wolf:4}
+execute if score camouflager mwd_settings matches 0 run item replace entity @s enderchest.3 with red_stained_glass{display:{Name:'{"text":"カモフラージャーの人数設定 現在:0人","color":"red","italic":false}'},change_page:1,wolf:4}
+execute if score camouflager mwd_settings matches 1 run item replace entity @s enderchest.3 with red_stained_glass{display:{Name:'{"text":"カモフラージャーの人数設定 現在:1人","color":"red","italic":false}'},change_page:1,wolf:4}
 
 team add red
 team modify red color red

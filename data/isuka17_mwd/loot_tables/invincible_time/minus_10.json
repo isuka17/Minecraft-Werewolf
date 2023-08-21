@@ -34,7 +34,7 @@
   },
   {
     "function": "set_nbt",
-    "tag": "{pagechange:1}"
+    "tag": "{change_page:1}"
   }
   ]
   }
