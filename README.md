@@ -1,25 +1,23 @@
-# Minecraft Werewolf Datapack
+# 概要
 
-Minecraft v1.19.4からv1.20.1まで対応しています。
+一撃必殺の弓と特殊アイテムを駆使して戦うPVP型の人狼ゲームです。
+
+Minecraft 1.19.4～1.20.1 までの動作を確認しています。
 
 ライセンスに則って使用してください。
 
 役職説明/アイテム説明はWikiからご覧になれます。
 
-## コマンド一覧
+## コマンド
 
-・アンインストール
+・ゲームの設定
 
-/function isuka17_mwd:uninstall
-
-・ゲーム管理権限の取得
-
-/function isuka17_mwd:op
+/function #mwd:setting
 
 ・ゲームの開始
 
-/function #isuka17_mwd:start
+/function #mwd:start
 
 ・ゲームの中断
 
-/function #isuka17_mwd:stop
+/function #mwd:stop
