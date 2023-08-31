@@ -1,0 +1,2 @@
+function mwd:amethyst/crafted_amethyst
+function mwd:amethyst/given_items

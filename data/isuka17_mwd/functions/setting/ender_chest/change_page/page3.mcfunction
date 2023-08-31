@@ -1,4 +1,0 @@
-item replace entity @s enderchest.0 with barrier{display:{Name:'{"text":"メイン設定ページに戻る","color":"red","italic":false}',Lore:['[{"text":"クリックしてメインメニューページに移動する","color":"white","italic":false}]']},change_page:1}
-execute if score deadbody mwd_settings matches 0 run item replace entity @s enderchest.13 with redstone_block{display:{Name:'{"text":"死体生成：オフ","color":"red","italic":false}',Lore:['[{"text":"クリックして死体生成を有効化する","color":"white","italic":false}]']},change_page:1}
-execute if score deadbody mwd_settings matches 1.. run item replace entity @s enderchest.13 with emerald_block{display:{Name:'{"text":"死体生成：オン","color":"red","italic":false}',Lore:['[{"text":"クリックして死体生成を無効化する","color":"white","italic":false}]']},change_page:1}
-scoreboard players set @s mwd_settings_page 3

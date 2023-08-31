@@ -1,0 +1,17 @@
+[
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{Tags:[\"used_invincible_potion\"]}",
+        "effects": {
+          "minecraft:resistance": {
+            "amplifier": 4,
+            "duration": 1,
+            "visible": false
+          }
+        }
+      }
+    }
+  ]
+  

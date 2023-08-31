@@ -1,4 +1,0 @@
-item replace entity @s enderchest.10 with echo_shard{display:{Name:'{"text":"妖狐の呪殺","color":"dark_purple","italic":false}'},change_page:1}
-item replace entity @s enderchest.12 with fermented_spider_eye{display:{Name:'{"text":"人狼の生存者数表示","color":"red","italic":false}'},change_page:1}
-item replace entity @s enderchest.18 with barrier{display:{Name:'{"text":"前のページに戻る","color":"red","italic":false}'},change_page:1}
-scoreboard players set @s mwd_settings_page 5

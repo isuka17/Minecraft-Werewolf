@@ -1,0 +1,19 @@
+{
+    "replace": false,
+    "values": [
+      "minecraft:potion",
+      "minecraft:splash_potion",
+      "minecraft:netherite_axe",
+      "minecraft:snowball",
+      "minecraft:music_disc_11",
+      "minecraft:blaze_powder",
+      "minecraft:diamond",
+      "minecraft:gold_nugget",
+      "minecraft:slime_ball",
+      "minecraft:ender_pearl",
+      "minecraft:golden_boots",
+      "minecraft:totem_of_undying",
+      "minecraft:shield",
+      "minecraft:blaze_rod"
+    ]
+  }

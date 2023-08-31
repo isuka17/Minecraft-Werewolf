@@ -1,0 +1,3 @@
+# 開始前
+title @a[team=mwd_join] actionbar [{"text":"管理者: ","color":"#ffaad5"},{"selector":"@a[tag=mwd_op]","color":"#ffaad5"},{"text":"  人数: ","color":"green"},{"score":{"name":"#人数","objective":"mwd_settings"},"color":"green"},{"text":"  現在: ","color":"gold"},{"text":"参加希望","color":"gold"}]
+title @a[team=!mwd_join] actionbar [{"text":"管理者: ","color":"#ffaad5"},{"selector":"@a[tag=mwd_op]","color":"#ffaad5"},{"text":"  人数: ","color":"green"},{"score":{"name":"#人数","objective":"mwd_settings"},"color":"green"},{"text":"  現在: ","color":"aqua"},{"text":"観戦する","color":"aqua"}]

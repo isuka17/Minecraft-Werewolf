@@ -1,0 +1,11 @@
+tellraw @s[scores={mwd_roles_wolf=1}] [{"text":"  死体偽装","color":"red"},{"text":" → ","color":"white"},{"text":"選択","clickEvent":{"action":"run_command","value":"/trigger mwd_selected_amethyst set 10"},"bold":true,"color":"#80cfff"}]
+tellraw @s[scores={mwd_roles_wolf=1}] [{"text":"  死体消去","color":"red"},{"text":" → ","color":"white"},{"text":"選択","clickEvent":{"action":"run_command","value":"/trigger mwd_selected_amethyst set 11"},"bold":true,"color":"#80cfff"}]
+tellraw @s[scores={mwd_roles_wolf=1}] [{"text":"  カモフラージュ","color":"red"},{"text":" → ","color":"white"},{"text":"選択","clickEvent":{"action":"run_command","value":"/trigger mwd_selected_amethyst set 12"},"bold":true,"color":"#80cfff"}]
+tellraw @s [{"text":"  一撃必殺の斧 → ","color":"white"},{"text":"選択","clickEvent":{"action":"run_command","value":"/trigger mwd_selected_amethyst set 1"},"bold":true,"color":"#80cfff"}]
+tellraw @s [{"text":"  一撃必殺のポーション → ","color":"white"},{"text":"選択","clickEvent":{"action":"run_command","value":"/trigger mwd_selected_amethyst set 2"},"bold":true,"color":"#80cfff"}]
+tellraw @s [{"text":"  風船 → ","color":"white"},{"text":"選択","clickEvent":{"action":"run_command","value":"/trigger mwd_selected_amethyst set 3"},"bold":true,"color":"#80cfff"}]
+tellraw @s [{"text":"  透明化のポーション → ","color":"white"},{"text":"選択","clickEvent":{"action":"run_command","value":"/trigger mwd_selected_amethyst set 4"},"bold":true,"color":"#80cfff"}]
+tellraw @s [{"text":"  エナジードリンク → ","color":"white"},{"text":"選択","clickEvent":{"action":"run_command","value":"/trigger mwd_selected_amethyst set 5"},"bold":true,"color":"#80cfff"}]
+tellraw @s [{"text":"  発光の粉 → ","color":"white"},{"text":"選択","clickEvent":{"action":"run_command","value":"/trigger mwd_selected_amethyst set 6"},"bold":true,"color":"#80cfff"}]
+tellraw @s [{"text":"＊---------------------------＊","color":"white"}]
+scoreboard players enable @s mwd_selected_amethyst

@@ -1,2 +1,0 @@
-function isuka17_mwd:bossbar/camouflage/tick
-function isuka17_mwd:bossbar/invincible_time/tick
